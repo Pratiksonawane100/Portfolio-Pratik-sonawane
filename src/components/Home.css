@@ -1,0 +1,173 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+   /* Set your desired background color */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  .profile-pic1 {
+    margin-right: 50px;
+
+    img {
+      border-radius: 50%; /* Makes the profile picture round */
+      width: 380px; /* Set your desired width */
+      height: 450px; /* Set your desired height */
+      object-fit: cover; /* Ensures the image covers the entire container */
+      border-radius: 140px 30px 140px 200px;
+    }
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+
+    .profile-details {
+      h2 {
+        margin: 0;
+        font-size: 22px;
+        color: #333; /* Set your desired text color */
+      }
+
+      h1 {
+        margin: 5px 0;
+        font-size: 63px;
+        color: #333; /* Set your desired text color */
+      }
+
+      p {
+        margin: 0;
+        font-size: 28px;
+        color: #333; /* Set your desired text color */
+        font-weight: 600;
+      }
+    }
+  }
+
+  .profile-description {
+    margin-top: 20px;
+    color: #555; /* Set your desired text color */
+
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  .contact-button {
+    margin-top: 20px;
+    width: 150px;
+    justify-content: space-evenly;
+    border-radius: 50%;
+
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff; /* Set your desired text color */
+      background-color: #e6e9ed; /* Set your desired background color */
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.4s ease-in-out;
+      border: 2px solid #333;
+      color: #333;;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+      &:hover {
+        background-color: #333; /* Set your desired hover background color */
+        color: white;
+        border: 2px solid white;
+      }
+
+      .email-icon {
+        margin-right: 15px;
+        position: relative;
+        top: 3px;
+    
+        img {
+          width: 30px; /* Set your desired width */
+          height: 30px; /* Set your desired height */
+        }
+      }
+      &:hover img {
+        color: white; /* Change the brightness on hover */
+      }
+    }
+  }
+}
+/* Add this to your Home.css file */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Adjust as needed */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.prop-con{
+  width: 500px;
+}
+.home {
+  position: relative;
+  /* Add your existing styles for the .home container here */
+}
+
+.profile-description {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.social-icons {
+  position: relative;
+  display: flex;
+  /* justify-content: ; */
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px; /* Adjust the size of the logos */
+  height: 30px; /* Adjust the size of the logos */
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+  margin: 20px;
+}
+
+/* Styling for each specific logo */
+.social-icons a img {
+  width: 100%; /* Ensure the image takes up the full space within the anchor */
+}
+
+/* Add hover effect */
+.social-icons a:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 760px) {
+ .home{
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+ }
+ .prop-con{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 200%;
+  margin-top: -100px;
+ }
+ 
+ .profile-pic {
+  margin-right: 20px;
+  overflow: hidden; /* Ensure the image stays within the circle */
+
+  img {
+    border-radius: 50%;
+    width: 100px; /* Adjust the width of the circle */
+    height: 100px; /* Adjust the height of the circle */
+    object-fit: cover;
+  }
+}
+}

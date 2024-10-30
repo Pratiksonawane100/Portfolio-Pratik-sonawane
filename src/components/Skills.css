@@ -1,0 +1,89 @@
+
+  
+  
+ 
+  .skill-name {
+    margin-top: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  .skill-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 100px;
+  }
+  
+  .skill-card {
+    width: 20%; /* Adjust as needed */
+    margin: 1%;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid rgb(58, 146, 228);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0px 2px 16px 6px rgb(214, 211, 211); */
+    color: rgb(119, 254, 254);
+    background-color: #eeeeee;
+  }
+  
+  .skill-logo {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    object-fit: contain;
+  }
+  
+  .skill-name {
+    margin-top: 8px;
+  }
+  .skill-logo {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    object-fit: contain;
+  }
+  /* Skills.css */
+
+/* Container for the skills cards */
+/* Responsive adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .skill-cards-container {
+      justify-content: center;
+    }
+  
+    .skill-card {
+      width: 200px; 
+      border-radius: 10px;
+      margin: 4px;/* Adjust the width for smaller screens */
+    }
+  
+    .skill-logo {
+      width: 150px; /* Adjust the size for smaller screens */
+      height: 80px;
+    }
+  
+    .skill-name {
+      font-size: 14px;
+    }
+  }
+  
+  /* Add more media queries as needed for further responsiveness */
+  .con{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: 10%;
+    text-align: center;
+    
+  }
+  .font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 34px;
+    
+  }

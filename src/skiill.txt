@@ -1,0 +1,74 @@
+  <div className="logo">
+        <div className="skill-card">
+          <img
+            src="https://your-react-logo-url.png"
+            alt="React.js Logo"
+            className="skill-logo"
+          />
+          <div className="skill-name">React.js</div>
+        </div>
+
+        <div className="skill-card">
+          <img
+            src="https://your-node-logo-url.png"
+            alt="Node.js Logo"
+            className="skill-logo"
+          />
+          <div className="skill-name">Node.js</div>
+        </div>
+
+        <div className="skill-card">
+          <img
+            src="https://your-express-logo-url.png"
+            alt="Express.js Logo"
+            className="skill-logo"
+          />
+          <div className="skill-name">Express.js</div>
+        </div>
+
+        <div className="skill-card">
+          <img
+            src="https://your-mongodb-logo-url.png"
+            alt="MongoDB Logo"
+            className="skill-logo"
+          />
+          <div className="skill-name">MongoDB</div>
+        </div>
+
+        <div className="skill-card">
+          <img
+            src="https://your-html-css-logo-url.png"
+            alt="HTML5, CSS3, SASS Logos"
+            className="skill-logo"
+          />
+          <div className="skill-name">HTML5, CSS3, SASS</div>
+        </div>
+
+        <div className="skill-card">
+          <img
+            src="https://your-javascript-logo-url.png"
+            alt="JavaScript Logo"
+            className="skill-logo"
+          />
+          <div className="skill-name">JavaScript (ES6+)</div>
+        </div>
+
+        <div className="skill-card">
+          <img
+            src="https://your-rest-api-logo-url.png"
+            alt="RESTful API Logo"
+            className="skill-logo"
+          />
+          <div className="skill-name">RESTful API design and integration</div>
+        </div>
+
+        <div className="skill-card">
+          <img
+            src="https://your-git-logo-url.png"
+            alt="Git Logo"
+            className="skill-logo"
+          />
+          <div className="skill-name">Git and version control</div>
+        </div>
+        </div> 
+      

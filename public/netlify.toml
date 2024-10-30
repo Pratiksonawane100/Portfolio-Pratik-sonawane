@@ -1,0 +1,4 @@
+[[redirects]]
+from="/App.js*"
+to="/"
+status=200

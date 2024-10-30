@@ -1,0 +1,247 @@
+/* Navbar.css */
+
+nav {
+  background-color: #333; /* Set your desired background color */
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  color: white; /* Set your desired text color */
+  font-size: 16px; /* Set your desired font size */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white; /* Set your desired link color */
+}
+
+
+
+nav.scrolled {
+  background-color: #cccccc95; /* Set your desired gray color for the scrolled state */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  color: #333; /* Set your desired text color */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 15px; /* Add margin between list items */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Add styles for active or hover states as needed */
+li:hover,
+li:active {
+  /* background-color: #555; */
+  color: white;
+}
+/* Navbar.css */
+
+
+
+nav.scrolled {
+  background-color: rgba(200, 200, 200, 0.564); /* Set your semi-transparent gray color for the scrolled state */
+  box-shadow: 2px 4px 30px 4px rgb(168, 164, 164);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  color: #333; /* Set your desired text color */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 18px; /* Add margin between list items */
+  position: relative;
+
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  transition: width 0.3s ease; /* Add transition effect */
+}
+
+li:hover::before {
+  width: 100%;
+}
+
+/* Add styles for active states as needed */
+li:hover,
+li:active {
+  color: rgb(71, 67, 67);
+}
+.n{
+  display: flex;
+}
+/* .pr{
+  margin-right: 600px;
+  
+} */
+.pr ul li{
+  font-size: 32px;
+  font-family: sans-serif;
+}
+.res{
+  border: 2px solid #333;
+  height: 35px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.4s ease-in-out;
+
+}
+.res:hover{
+  background-color: #333;
+  color: white;
+
+}
+.pr{
+  margin-right: 600px;
+}
+@media only screen and (max-width: 760px) {
+  .pr{
+    display: flex;
+    margin-right: 0px;
+  }
+
+  ul.center {
+    padding-left: 0; /* Remove left padding for better alignment */
+  }
+  nav{
+    width: 100%;
+    position: fixed;
+    
+  }
+  
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none; /* Hide by default on larger screens */
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #333;
+  transition: 0.4s;
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+}
+
+.links li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+    padding: 10px;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .links li {
+    margin: 10px 0;
+  }
+  .navbar-container{
+    margin-right: 80px;
+  }
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.954); /* Set your initial semi-transparent white color */
+  padding: 10px;
+  transition: background-color 0.3s ease; /* Add smooth transition for background color change */
+  backdrop-filter: blur(10px); /* Add blur for glass effect */
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  padding-top: 40px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  
+}
+.navbar-container{
+  display: flex;
+}
